@@ -34,7 +34,7 @@ module Lazyapi
 
     config.middleware.insert_before 0,Rack::Cors do
       allow do
-        origins 'http://localhost:3000'
+        origins 'https://lazydoapi.herokuapp.com'
         resource '*', :headers=>:any,:methods =>[:get,:post,:options,:put,:delete]
       end
     end
